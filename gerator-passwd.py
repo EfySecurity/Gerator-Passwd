@@ -30,18 +30,18 @@ def evaluate_password_security(password):
     return security_level
 
 def main():
-    print("Bem-vindo ao Gerador de Senhas Fortes!")
+    print("\033[1mBem-vindo ao Gerador de Senhas Fortes!\033[0m\n")
 
-    length = int(input("Digite o comprimento desejado da senha: "))
-    use_uppercase = input("Incluir letras maiúsculas? (S/N): ").lower() == "s"
-    use_digits = input("Incluir dígitos? (S/N): ").lower() == "s"
-    use_symbols = input("Incluir símbolos? (S/N): ").lower() == "s"
+    length = int(input("\033[36mDigite o comprimento desejado da senha: \033[0m"))
+    use_uppercase = input("\033[36mIncluir letras maiúsculas? (S/N): \033[0m").lower() == "s"
+    use_digits = input("\033[36mIncluir dígitos? (S/N): \033[0m").lower() == "s"
+    use_symbols = input("\033[36mIncluir símbolos? (S/N): \033[0m").lower() == "s"
 
     password = generate_strong_password(length, use_uppercase, use_digits, use_symbols)
     security_level = evaluate_password_security(password)
 
-    print("\nSenha Forte Gerada:", password)
-    print("Nível de Segurança:", security_level, "de 5")
+    print("\n\033[1mSenha Forte Gerada:\033[0m", password)
+    print("\033[1mNível de Segurança:\033[0m", security_level, "de 5")
 
 if __name__ == "__main__":
     main()
