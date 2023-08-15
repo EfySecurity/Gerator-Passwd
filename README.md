@@ -4,7 +4,15 @@ Este é um projeto simples em Python para gerar senhas fortes com base nos requi
 
 ## Pré-requisitos
 
-Antes de executar o script, certifique-se de ter o Python instalado em seu sistema. Você também precisará instalar as bibliotecas `random` e `string`, que são bibliotecas padrão do Python e não requerem instalação adicional.
+Antes de executar o script, certifique-se de ter o Python instalado em seu sistema. Você também precisará instalar as bibliotecas `random` e `string`, que são bibliotecas padrão do Python e não requerem instalação adicional, para instalar use os comandos abaixo.
+
+```bash
+pip install radom
+```
+
+```bash
+pip install string
+```
 
 ## Como Usar
 
