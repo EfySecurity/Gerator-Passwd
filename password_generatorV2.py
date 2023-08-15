@@ -1,6 +1,14 @@
 import random
 import string
 
+class Colors:
+    HEADER = '\033[95m'
+    BLUE = '\033[94m'
+    GREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+
 class PasswordGenerator:
     def __init__(self):
         self.characters = string.ascii_letters + string.digits + string.punctuation
@@ -31,9 +39,9 @@ class PasswordEvaluator:
         return security_score
 
 def main():
-    print("Bem-vindo ao Gerador de Senhas Fortes!\n")
+    print(f"{Colors.HEADER}Bem-vindo ao Gerador de Senhas Fortes!{Colors.END}\n")
 
-    length = int(input("Digite o comprimento desejado da senha: "))
+    length = int(input(f"{Colors.BLUE}Digite o comprimento desejado da senha: {Colors.END}"))
     
     generator = PasswordGenerator()
     evaluator = PasswordEvaluator()
@@ -41,8 +49,8 @@ def main():
     password = generator.generate_password(length)
     security_score = evaluator.evaluate_security(password)
 
-    print("\033[1mSenha Forte Gerada:\033[0m", password)
-    print("\033[1mNível de Segurança:\033[0m", security_score, "de 6")
+    print(f"\n\033[1mSenha Forte Gerada:\033[0m {password}")
+    print(f"\033[1mNível de Segurança:\033[0m {security_score} de 6")
 
 if __name__ == "__main__":
     main()
