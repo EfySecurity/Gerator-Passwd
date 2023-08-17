@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="python-logo-generic.svg">
+</div>
+
 # Gerador de Senhas Fortes em Python
 
 Este é um projeto simples em Python para gerar senhas fortes com base nos requisitos que você definir e avaliar a segurança da senha gerada.
@@ -50,4 +54,10 @@ python password_generator.py
 
 ## Autor
 
-Efy Security
+Nome: Efy Security
+
+Email: efy.security@proton.me
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
